@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Robot Control</title>
+<style>
+
+body {
+   background-color:azure;
+  }
+
+ 
+
+.buttonn{
+ background-color: lightblue;
+    padding: 7px 50px;
+   text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:inherit;
+
+
+}
+
+
+.button3{
+    background-color: red;
+    padding: 7px 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 12px;
+    cursor: pointer;
+    position:inherit;
+
+    
+	
+	
+	
+	
+	
+	
+}
+
+
+.page{
+    width: 100%;
+    max-width: 1920px;
+    min-width: 480px;
+    height: 200px;
+    margin-left: -8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+</style>  
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "d32e4ebf-c63b-4d1a-8759-3446296e1f1b", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "29f5d147-7059-4ecb-9661-ffbc27bb50ee", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+
+</head>
+<body>
+ <div class="page">
+<h1>Robot Control </h1>
+
+
+<button class=" buttonn" id ="2"type="button"name="F" value="forwords">Forwords </button>  
+
+<button class=" buttonn"id ="1"type="button" name="L" value="left">Left </button>
+<button class=" button3"id ="3"type="button"name="S" value="stop">Stop </button>
+<button class=" buttonn" id ="5"type="button"name="R" value="right">Right </button>
+
+
+<button class=" buttonn"id ="4"type="button"name="B" value="backwords">Backword </button>
+
+
+
+</div>
+
+</body>
+</html>
